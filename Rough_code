@@ -1,0 +1,77 @@
+#input a new meal
+from datetime import datetime
+
+
+
+def time_difference(input_time_str):
+    """
+    Calculates the time difference between now and a given time.
+
+    Args:
+        input_time_str: A string representing the time in the format "YYYY-MM-DD HH:MM:SS".
+
+    Returns:
+        A string representing the time difference in days, hours, minutes, and seconds.
+    """
+    input_time = datetime.strptime(input_time_str, "%Y-%m-%d %H:%M:%S")
+    now = datetime.now()
+    difference = now - input_time
+
+    days = difference.days
+    hours = difference.seconds // 3600
+    minutes = (difference.seconds % 3600) // 60
+    seconds = difference.seconds % 60
+
+    return f"{days} days, {hours} hours, {minutes} minutes, {seconds} seconds"
+
+'''
+meal = input('do you want to record a new meal?')
+if meal == 'yes':
+    #main function
+if meal == 'no':
+    print('ok, see you soon')
+'''
+options = [
+    "Enter a new log",
+    "View your log",
+    "Time since last meal",
+    "Search a partcular dish."
+]
+
+for i, option in enumerate(options, start=1):
+    print(f"{i}. {option}")
+
+choice = input('what would you like to do? ')
+
+if choice == '1':
+    print("NEW LOG INPUT")
+    meal = input("What did you eat?" )
+    day = input("What is the date? Enter in YYYY-MM-DD ")
+    time = input("What time did you start eating? Enter in HH:MM:SS ")
+    ingredients = input("List all the ingredients in your meal. ")
+    #store the results in a dictionary in another file
+    f = open("diary.txt", "a")
+    data_to_write = "TIME:", time, "\n", "MEAL:", meal, "\n", "ingredients:", ingredients, "\n"
+    f.write(data_to_write)
+    f.close()
+
+elif choice == '2':
+    #we need a visualization tool which can present the dictionary
+    #print the dictionary
+    f = open("diary.txt", "r")
+    print(f.read())
+
+#elif choice == '3':
+    time_difference()
+    #time_difference =
+
+else:
+    #search surrent meals for this using indexing and searching algothithms
+
+
+
+
+    # Example usage
+    input_time = "2025-04-14 11:00:00"
+    difference = time_difference(input_time)
+    print(f"Time difference: {difference}")
