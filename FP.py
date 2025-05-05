@@ -179,6 +179,7 @@ def main():
 
                 except json.decoder.JSONDecodeError:
                     print("The diary is empty.")
+                    break
 
                 while True:
                     know_date = input("Do you remember the date of this meal? (yes/no): ").strip().lower()
@@ -245,4 +246,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
+
