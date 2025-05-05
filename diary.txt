@@ -1,0 +1,8 @@
+[
+    {
+        "date": "2025-03-01",
+        "meal": "breakfast",
+        "time": "09:22",
+        "ingredients": "rice, salmon"
+    }
+]
