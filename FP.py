@@ -156,7 +156,7 @@ def main():
                     except json.decoder.JSONDecodeError:
                         print("The diary is empty.")
                         diary_data = []
-                    break
+                        break
 
                 # Get the last entry’s time and date
                 last_time = diary_data[-1]["time"]
