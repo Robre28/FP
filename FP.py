@@ -60,7 +60,7 @@ def visualize(txtfile):
     # Output the PDF to a file
     pdf.output("diary_log.pdf")
 
-def main():
+
     options = [
         "Enter a new log",
         "View your log",
@@ -244,6 +244,4 @@ def main():
             else:
                 print("choice must be either 1, 2, 3, 4 or 5. Please input again")
 
-if __name__ == '__main__':
-    main()
 
