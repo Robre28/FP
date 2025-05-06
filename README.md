@@ -1,5 +1,5 @@
 # FP
-This project is a nutritional diary that allows the user to log and view the meals they have eaten. Specifically the code has five functions. The first one is to add a new entry to the log. The second is to view the log in an external pdf file formatted in a presentable way. The third is to see the time since the last meal. The fourth is to search for a particular meal (breakfast, lunch, or dinner) in the food log. Lastly, the fifth option is to delete the entire food log. 
+This project is a nutritional diary that allows the user to log and view the meals they have eaten. The code for this project is located on the tab labeled FP.py. Specifically the code has five functions. The first one is to add a new entry to the log. The second is to view the log in an external pdf file formatted in a presentable way. The third is to see the time since the last meal. The fourth is to search for a particular meal (breakfast, lunch, or dinner) in the food log. Lastly, the fifth option is to delete the entire food log. 
 
 The first output the user will see is a choice to select which of these functions they want to select. They will have to input a number between 1 and 5. 
 
